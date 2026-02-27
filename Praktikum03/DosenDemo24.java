@@ -30,8 +30,16 @@ public class DosenDemo24 {
             System.out.println("---------------------------------");
         }
         for (Dosen24 dsn : arrayofdosen) {
+            System.out.println("=== Data Seluruh Dosen ===");
             dsn.cetakInfo();
         }
+
+        DataDosen24 data = new DataDosen24();
+        data.dataSemuaDosen(arrayofdosen);
+        data.jumlahDosenPerJenisKelamin(arrayofdosen);
+        data.reratausiadosenperjeniskelamin(arrayofdosen);
+        data.infoDosenPalingTua(arrayofdosen);
+        data.infodosenpalingmuda(arrayofdosen);
         sc.close();
     }
 }
